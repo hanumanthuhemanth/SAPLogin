@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Widget.Support.CoordinatorLayout"
+    android:background="@color/colorBackground">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/ic_logo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ProgressBar
+            android:visibility="visible"
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/progressBarStyle"
+            android:indeterminate="true"
+            android:max="100" />
+
+        <TextView
+            android:layout_margin="@dimen/_40sdp"
+            android:id="@+id/textViewVersionName"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_10ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

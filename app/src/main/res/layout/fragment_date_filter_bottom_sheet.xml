@@ -1,0 +1,107 @@
+<android.support.design.widget.CoordinatorLayout
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:id="@+id/fragment_history_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:keepScreenOn="true">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:text="Select Date Range"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorDividerLine"
+                android:layout_height="0.5dp"/>
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="-7dp"
+                android:theme="@style/progressBarStyle"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:indeterminate="true"
+                android:max="100"/>
+            <LinearLayout
+                android:layout_margin="@dimen/_4sdp"
+                android:padding="@dimen/_4sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/buttonFromDate"
+                    android:text="From Date"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:theme="@style/Widget.AppCompat.Button.Colored"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/buttonToDate"
+                    android:text="To Date"
+                    android:textColor="@color/colorWhite"
+                    android:theme="@style/Widget.AppCompat.Button.Colored"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="@dimen/_4sdp"
+                android:padding="@dimen/_4sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:hint="From date &amp; To Date"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:layout_margin="@dimen/_4sdp"
+                android:padding="@dimen/_4sdp"
+                android:id="@+id/buttonGetRecords"
+                android:text="Get Records"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:theme="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:background="@color/colorDividerLine"
+                android:layout_height="0.5dp"/>
+            <ImageButton
+                android:id="@+id/imageButtonDismiss"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
